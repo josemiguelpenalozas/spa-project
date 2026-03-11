@@ -9,6 +9,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="plan")
 public class Plan {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nombre;
